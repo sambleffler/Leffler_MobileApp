@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-I3-7GQ">
+                                <rect key="frame" x="40" y="518" width="120.5" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="navButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xN9-v2-yp1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbg-zm-9sn">
+                                <rect key="frame" x="160.5" y="518" width="119.5" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="navButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEX-o5-gch"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DINOSAURS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lft-Vm-w7y">
+                                <rect key="frame" x="40" y="33" width="240" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Tyrannosaurus Rex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jms-cF-jXD">
+                                <rect key="frame" x="40" y="481" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="trex" translatesAutoresizingMaskIntoConstraints="NO" id="eh5-SX-QIa">
+                                <rect key="frame" x="40" y="68" width="240" height="406"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f6P-I3-7GQ" firstAttribute="leading" secondItem="jms-cF-jXD" secondAttribute="leading" id="5fr-F2-fVB"/>
+                            <constraint firstItem="lft-Vm-w7y" firstAttribute="trailing" secondItem="eh5-SX-QIa" secondAttribute="trailing" id="8S3-U1-jXN"/>
+                            <constraint firstItem="eh5-SX-QIa" firstAttribute="leading" secondItem="jms-cF-jXD" secondAttribute="leading" id="EMz-IO-40N"/>
+                            <constraint firstItem="jms-cF-jXD" firstAttribute="leading" secondItem="f6P-I3-7GQ" secondAttribute="leading" id="Ei2-eq-d6B"/>
+                            <constraint firstItem="lft-Vm-w7y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGA-iN-vnK"/>
+                            <constraint firstItem="lft-Vm-w7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="LvG-Zo-EAf"/>
+                            <constraint firstItem="lft-Vm-w7y" firstAttribute="leading" secondItem="eh5-SX-QIa" secondAttribute="leading" id="Mt2-ss-8d5"/>
+                            <constraint firstItem="tbg-zm-9sn" firstAttribute="width" secondItem="eh5-SX-QIa" secondAttribute="width" multiplier="0.5" id="R1n-xt-lpq"/>
+                            <constraint firstItem="lft-Vm-w7y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="afv-dh-glj"/>
+                            <constraint firstAttribute="bottom" secondItem="f6P-I3-7GQ" secondAttribute="bottom" constant="20" symbolic="YES" id="eoi-C0-Rws"/>
+                            <constraint firstItem="f6P-I3-7GQ" firstAttribute="width" secondItem="eh5-SX-QIa" secondAttribute="width" multiplier="0.5" id="f7A-CU-ZkC"/>
+                            <constraint firstItem="jms-cF-jXD" firstAttribute="trailing" secondItem="tbg-zm-9sn" secondAttribute="trailing" id="k9P-Xi-Phw"/>
+                            <constraint firstItem="eh5-SX-QIa" firstAttribute="top" secondItem="lft-Vm-w7y" secondAttribute="bottom" constant="8" symbolic="YES" id="lsZ-Hz-agu"/>
+                            <constraint firstItem="f6P-I3-7GQ" firstAttribute="baseline" secondItem="tbg-zm-9sn" secondAttribute="baseline" id="qBB-Qg-Llg"/>
+                            <constraint firstItem="tbg-zm-9sn" firstAttribute="leading" secondItem="f6P-I3-7GQ" secondAttribute="trailing" id="qSH-CR-dmI"/>
+                            <constraint firstItem="jms-cF-jXD" firstAttribute="top" secondItem="eh5-SX-QIa" secondAttribute="bottom" constant="7" id="r4r-TC-wsG"/>
+                            <constraint firstItem="eh5-SX-QIa" firstAttribute="trailing" secondItem="jms-cF-jXD" secondAttribute="trailing" id="sdq-iu-Ooy"/>
+                            <constraint firstItem="f6P-I3-7GQ" firstAttribute="top" secondItem="jms-cF-jXD" secondAttribute="bottom" constant="16" id="sjE-Bu-uET"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="frame" destination="eh5-SX-QIa" id="pLf-tG-IXS"/>
+                        <outlet property="nameLabel" destination="jms-cF-jXD" id="sbX-Vi-cWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="92.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trex" width="1200" height="1206"/>
+    </resources>
+</document>
